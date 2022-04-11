@@ -23,7 +23,7 @@ extension  ViewController : UITableViewDelegate, UITableViewDataSource{
                 cell.lblName.text = stockModel.name
                 cell.lblSymbol.text = stockModel.symbol
                 cell.symbol = stockModel.symbol
-                
+                cell.name = stockModel.name
                 cell.sendStockDelegate = self
                 
                 return cell

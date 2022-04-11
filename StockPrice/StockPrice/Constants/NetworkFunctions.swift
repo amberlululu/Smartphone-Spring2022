@@ -32,19 +32,17 @@ func getCurrentStockData(_ url : String) -> Promise<StockQuote>{
 
                 let currentStockModel = StockQuote("", "")
 
-                // I will get data here
                 let currentStockArray = JSON(response.data!).arrayValue
                 
                 guard let currentStock = currentStockArray.first else {return seal.fulfill(currentStockModel)}
 
                     currentStockModel.symbol = currentStock["symbol"].stringValue
                     currentStockModel.name = currentStock["name"].stringValue
-                    currentStockModel.price = currentStock["price"].floatValue
-                    currentStockModel.DayHigh = currentStock["dayHigh"].floatValue
-                    currentStockModel.DayLow = currentStock["dayLow"].floatValue
-//                        print(currentWeatherModel)
+                    currentStockModel.price = currentStock["price"].doubleValue
+                    currentStockModel.DayHigh = currentStock["dayHigh"].doubleValue
+                    currentStockModel.DayLow = currentStock["dayLow"].doubleValue
                 
-                    seal.fulfill(currentStockModel) // I am fulfilling the promise
+                    seal.fulfill(currentStockModel) 
 
             }
 

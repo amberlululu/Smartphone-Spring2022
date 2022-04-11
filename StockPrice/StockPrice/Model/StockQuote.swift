@@ -17,7 +17,7 @@ class StockQuote{
     
     var name : String = ""
     var symbol : String = ""
-    var price : Float = 0.0
-    var DayHigh : Float = 0.0
-    var DayLow : Float = 0.0
+    var price : Double = 0.0
+    var DayHigh : Double = 0.0
+    var DayLow : Double = 0.0
 }
