@@ -65,10 +65,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3EO-Vw-yP6">
-                                <rect key="frame" x="20" y="551" width="388" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3EO-Vw-yP6">
+                                <rect key="frame" x="20" y="551" width="388" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="5It-Zp-ikv"/>
+                                    <constraint firstAttribute="height" constant="40" id="5It-Zp-ikv"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -103,7 +103,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="shn-f2-Hmj">
-                                <rect key="frame" x="20" y="587" width="388" height="285"/>
+                                <rect key="frame" x="20" y="607" width="388" height="265"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="31N-cb-xKI"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="nOM-3C-Txf"/>

@@ -56,8 +56,9 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
                 lblMessage.text = "Overweight"
             }else if bmi >= 29.9{
                 lblMessage.text = "Obesity"
-            }else{
-                lblMessage.text = "Do not put empty input"
+            }else {
+                lblBMI.text = ""
+                lblMessage.text = "No empty input, other characters (numbers only)"
             }
 
 
@@ -81,7 +82,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             }else if bmi >= 29.9{
                 lblMessage.text = "Obesity"
             }else{
-                lblMessage.text = "Do not put empty input"
+                lblBMI.text = ""
+                lblMessage.text = "No empty input,other characters (numbers only)"
             }
         }
         
